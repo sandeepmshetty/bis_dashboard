@@ -1,0 +1,29 @@
+.App {
+  .bis-button {
+    font-size: 11px;
+    color: #fff;
+    font-weight: normal;
+    font-family: Ariel;
+    text-decoration: none;
+    height: 25px;
+  }
+
+  .bis-red-button {
+    @extend .bis-button;
+    background-color: #ca2420;
+    background: #ca2420;
+    border-color: #ca2420;
+  }
+
+  .bis-gray-button {
+    @extend .bis-button;
+    background-color: #737373;
+    background: #737373;
+    border-color: #737373;
+  }
+
+  .bis-button-group button
+  {
+      margin-right:5px;
+  }
+}

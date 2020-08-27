@@ -1,9 +1,11 @@
 import React from 'react';
+import './App.scss'; 
 import './App.css';
 
 import { connect } from 'react-redux';
 
-import Header from './views/header.jsx';
+import Header from './components/Header/Header.jsx';
+import Body from './components/Body/Body.jsx';
 
 import {
 	increaseCounter,
@@ -14,13 +16,12 @@ function App(props) {
 	return (
 		<div className='App'>
 			<Header/>
-			<div>Body</div>
+			<Body/>
 		</div>
 	);
 }
 
 const mapStateToProps = (state) => {
-	console.log('state:', state);
 	return {
 		count: state.counter.count,
 	};
