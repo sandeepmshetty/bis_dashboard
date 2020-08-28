@@ -22,8 +22,26 @@
     border-color: #737373;
   }
 
-  .bis-button-group button
-  {
-      margin-right:5px;
+  .bis-button-group button {
+    margin-right: 5px;
+  }
+
+  .ant-tabs-nav .ant-tabs-tab-btn {
+    font-size: 12px;
+  }
+
+  .ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn,
+  .ant-tabs-tab:hover {
+    color: #ca2420;
+  }
+
+  .ant-tabs-ink-bar {
+    background-color: #ca2420;
+    background: #ca2420;
+  }
+
+  .ag-row,
+  .ag-header {
+    font-size: 11px !important;
   }
 }
