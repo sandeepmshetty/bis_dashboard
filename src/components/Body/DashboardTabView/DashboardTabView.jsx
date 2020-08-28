@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
-import {Tabs} from 'antd';
+import {Tabs, Input, Row, Col, DatePicker, Button} from 'antd';
 import {AgGridReact} from 'ag-grid-react';
+import { SearchOutlined, ReloadOutlined } from '@ant-design/icons';
 
 import './DashboardTabView.scss';
 
@@ -147,12 +148,27 @@ export default class DashboardTabView extends Component {
         console.log(key);
     }
 
+    onChange(date, dateString) {
+        console.log(date, dateString);
+      }
+
     render()
     {
         const {TabPane} = Tabs;
 
         return (
             <div className="bis-dashboard-tab-view">
+                <Row className="bis-dashboard-search-row">
+                    <Col span={3}><Input placeholder="Req No"/></Col>
+                    <Col span={3}><Input placeholder="Job No"/></Col>
+                    <Col span={3}><Input placeholder="Client"/></Col>
+                    <Col span={3}><Input placeholder="Researcher"/></Col>
+                    <Col span={3}><DatePicker onChange={this.onChange}  placeholder="From Date" /></Col>
+                    <Col span={3}><DatePicker onChange={this.onChange}  placeholder="To Date" /></Col>
+                    <Col><Button type="primary" className="bis-gray-button" title="Search" icon={<SearchOutlined />} /></Col>
+                    <Col><Button type="primary" className="bis-gray-button" title="Refresh" icon={<ReloadOutlined />} /></Col>
+                </Row>
+
                 <Tabs defaultActiveKey="1" onChange={this.callback}>
                     <TabPane tab="Job Stack" key="1">
                         <div

@@ -1,4 +1,18 @@
 .bis-dashboard-tab-view
 {
-    
+   .bis-dashboard-search-row
+   {
+       margin-top:5px;
+       margin-bottom:5px;
+      
+       .ant-col
+        {
+            margin-right:5px;
+        }
+
+        .ant-btn-icon-only
+        {
+            height: 32px;
+        }
+   } 
 }
