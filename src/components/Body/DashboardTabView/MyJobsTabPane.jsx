@@ -9,7 +9,7 @@ import {
 import {AgGridReact} from 'ag-grid-react';
 import {SearchOutlined, ReloadOutlined} from '@ant-design/icons';
 
-export default class JobStackTabPane extends Component {
+export default class MyJobsTabPane extends Component {
 
     constructor(props)
     {
@@ -92,6 +92,12 @@ export default class JobStackTabPane extends Component {
                     field: "etr",
                     sortable: true,
                     filter: true
+                },
+                {
+                    headerName: "Time Spent",
+                    field: "timeSpents",
+                    sortable: true,
+                    filter: true
                 }
             ],
             rowData: [
@@ -110,7 +116,8 @@ export default class JobStackTabPane extends Component {
                     timeIn: '20 Aug 2020 19:48',
                     timeDue: '20 Aug 2020 19:48',
                     dueIn: '',
-                    etr: ''
+                    etr: '',
+                    timeSpents:'',
                 }, {
                     req: "386614",
                     jobNo: "348511",
@@ -126,7 +133,8 @@ export default class JobStackTabPane extends Component {
                     timeIn: '20 Aug 2020 19:48',
                     timeDue: '20 Aug 2020 19:48',
                     dueIn: '',
-                    etr: ''
+                    etr: '',
+                    timeSpents:'',
                 }, {
                     req: "386611",
                     jobNo: "348509",
@@ -142,7 +150,8 @@ export default class JobStackTabPane extends Component {
                     timeIn: '20 Aug 2020 19:48',
                     timeDue: '20 Aug 2020 19:48',
                     dueIn: '',
-                    etr: ''
+                    etr: '',
+                    timeSpents:'',
                 }
             ]
         }

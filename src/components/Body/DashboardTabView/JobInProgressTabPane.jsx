@@ -35,7 +35,7 @@ export default class JobInProgressTabPane extends Component {
                     field: "status",
                     sortable: true,
                     filter: true
-                },  {
+                }, {
                     headerName: "Region",
                     field: "region",
                     sortable: true,
@@ -45,7 +45,7 @@ export default class JobInProgressTabPane extends Component {
                     field: "sector",
                     sortable: true,
                     filter: true
-                },{
+                }, {
                     headerName: "Team",
                     field: "team",
                     sortable: true,
