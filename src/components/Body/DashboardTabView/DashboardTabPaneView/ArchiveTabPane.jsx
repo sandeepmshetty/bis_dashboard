@@ -9,7 +9,7 @@ import {
 import {AgGridReact} from 'ag-grid-react';
 import {SearchOutlined, ReloadOutlined} from '@ant-design/icons';
 
-export default class MyJobsTabPane extends Component {
+export default class ArchiveTabPane extends Component {
 
     constructor(props)
     {
@@ -174,12 +174,12 @@ export default class MyJobsTabPane extends Component {
                     type="primary"
                     className="bis-gray-button"
                     title="Search"
-                    icon={< SearchOutlined />}/></Col>
+                    icon={<SearchOutlined />}/></Col>
                 <Col><Button
                     type="primary"
                     className="bis-gray-button"
                     title="Refresh"
-                    icon={< ReloadOutlined />}/></Col>
+                    icon={<ReloadOutlined />}/></Col>
             </Row>
 
             <div

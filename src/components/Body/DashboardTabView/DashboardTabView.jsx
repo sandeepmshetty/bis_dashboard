@@ -1,10 +1,11 @@
 import React, {Component} from 'react';
-import {Tabs, Row, Col} from 'antd';
-import JobStackTabPane from './JobStackTabPane.jsx';
-import JobInProgressTabPane from './JobInProgressTabPane.jsx';
-import MyJobsTabPane from './MyJobsTabPane.jsx';
-import ArchiveTabPane from './ArchiveTabPane.jsx';
-import TeamCapacityTabPane from './TeamCapacityTabPane.jsx';
+import {Tabs} from 'antd';
+import JobStackTabPane from './DashboardTabPaneView/JobStackTabPane.jsx';
+import JobInProgressTabPane from './DashboardTabPaneView/JobInProgressTabPane.jsx';
+import MyJobsTabPane from './DashboardTabPaneView/MyJobsTabPane.jsx';
+import ArchiveTabPane from './DashboardTabPaneView/ArchiveTabPane.jsx';
+import TeamCapacityTabPane from './DashboardTabPaneView/TeamCapacityTabPane.jsx';
+
 
 import './DashboardTabView.scss';
 

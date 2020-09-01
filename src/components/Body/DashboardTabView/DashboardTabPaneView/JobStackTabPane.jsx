@@ -9,7 +9,7 @@ import {
 import {AgGridReact} from 'ag-grid-react';
 import {SearchOutlined, ReloadOutlined} from '@ant-design/icons';
 
-export default class ArchiveTabPane extends Component {
+export default class JobStackTabPane extends Component {
 
     constructor(props)
     {
@@ -92,12 +92,6 @@ export default class ArchiveTabPane extends Component {
                     field: "etr",
                     sortable: true,
                     filter: true
-                },
-                {
-                    headerName: "Time Spent",
-                    field: "timeSpents",
-                    sortable: true,
-                    filter: true
                 }
             ],
             rowData: [
@@ -116,8 +110,7 @@ export default class ArchiveTabPane extends Component {
                     timeIn: '20 Aug 2020 19:48',
                     timeDue: '20 Aug 2020 19:48',
                     dueIn: '',
-                    etr: '',
-                    timeSpents:'',
+                    etr: ''
                 }, {
                     req: "386614",
                     jobNo: "348511",
@@ -133,8 +126,7 @@ export default class ArchiveTabPane extends Component {
                     timeIn: '20 Aug 2020 19:48',
                     timeDue: '20 Aug 2020 19:48',
                     dueIn: '',
-                    etr: '',
-                    timeSpents:'',
+                    etr: ''
                 }, {
                     req: "386611",
                     jobNo: "348509",
@@ -150,8 +142,7 @@ export default class ArchiveTabPane extends Component {
                     timeIn: '20 Aug 2020 19:48',
                     timeDue: '20 Aug 2020 19:48',
                     dueIn: '',
-                    etr: '',
-                    timeSpents:'',
+                    etr: ''
                 }
             ]
         }
@@ -174,12 +165,12 @@ export default class ArchiveTabPane extends Component {
                     type="primary"
                     className="bis-gray-button"
                     title="Search"
-                    icon={< SearchOutlined />}/></Col>
+                    icon={<SearchOutlined />}/></Col>
                 <Col><Button
                     type="primary"
                     className="bis-gray-button"
                     title="Refresh"
-                    icon={< ReloadOutlined />}/></Col>
+                    icon={<ReloadOutlined />}/></Col>
             </Row>
 
             <div

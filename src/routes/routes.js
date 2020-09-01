@@ -1,7 +1,7 @@
 import React, {Component} from "react";
 import {Router, Switch, Route} from "react-router-dom";
 
-import JobInProgressTabPane from '../../src/components/Body/DashboardTabView/JobInProgressTabPane.jsx';
+import JobInProgressTabPane from '../components/Body/DashboardTabView/DashboardTabPaneView/JobInProgressTabPane.jsx';
 import Body from '../../src/components/Body/Body.jsx';
 import history from './history';
 
