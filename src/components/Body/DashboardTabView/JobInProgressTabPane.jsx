@@ -1,6 +1,5 @@
 import React, {Component} from 'react';
 import {AgGridReact} from 'ag-grid-react';
-import {SearchOutlined, ReloadOutlined} from '@ant-design/icons';
 
 export default class JobInProgressTabPane extends Component {
 

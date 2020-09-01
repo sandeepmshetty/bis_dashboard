@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {Tabs} from 'antd';
+import {Tabs, Row, Col} from 'antd';
 import JobStackTabPane from './JobStackTabPane.jsx';
 import JobInProgressTabPane from './JobInProgressTabPane.jsx';
 import MyJobsTabPane from './MyJobsTabPane.jsx';
@@ -17,7 +17,7 @@ export default class DashboardTabView extends Component {
     render()
     {
         const {TabPane} = Tabs;
-  
+
         return (
             <div className="bis-dashboard-tab-view">
                 <Tabs defaultActiveKey="1" onChange={this.callback}>
@@ -34,7 +34,7 @@ export default class DashboardTabView extends Component {
                         <ArchiveTabPane/>
                     </TabPane>
                     <TabPane tab="Team Capacity" key="5">
-                        <TeamCapacityTabPane />
+                        <TeamCapacityTabPane/>
                     </TabPane>
                 </Tabs>
             </div>
