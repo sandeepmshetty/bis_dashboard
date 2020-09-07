@@ -11,25 +11,25 @@ import {increaseCounter, decreaseCounter} from './redux/Counter/counter.actions'
 import Routes from '../src/routes/routes';
 
 function App(props) {
-				return (
-								<Router>
-												<div className='App'>
-																<Header/>
-																<Routes/>
-												</div>
-								</Router>
-				);
+	return (
+		<Router>
+			<div className='App'>
+				<Header/>
+				<Routes/>
+			</div>
+		</Router>
+	);
 }
 
 const mapStateToProps = (state) => {
-				return {count: state.counter.count};
+	return {count: state.counter.count};
 };
 
 const mapDispatchToProps = (dispatch) => {
-				return {
-								increaseCounter: () => dispatch(increaseCounter()),
-								decreaseCounter: () => dispatch(decreaseCounter())
-				};
+	return {
+		increaseCounter: () => dispatch(increaseCounter()),
+		decreaseCounter: () => dispatch(decreaseCounter())
+	};
 };
 
 export default connect(mapStateToProps, mapDispatchToProps)(App);

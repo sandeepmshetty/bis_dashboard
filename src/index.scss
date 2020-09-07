@@ -3,3 +3,93 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 12px;
 }
+
+.bis-button {
+  font-size: 11px;
+  color: #fff;
+  font-weight: normal;
+  font-family: Ariel;
+  text-decoration: none;
+  height: 25px;
+}
+
+.bis-red-button {
+  @extend .bis-button;
+  background-color: #ca2420;
+  background: #ca2420;
+  border-color: #ca2420;
+}
+
+.bis-red-button:hover,
+.bis-red-button:focus,
+.ant-checkbox-checked .ant-checkbox-inner
+{
+  background-color: #ca2420;
+  background: #ca2420;
+  border-color: #ca2420;
+}
+
+.ant-checkbox-wrapper:hover .ant-checkbox-inner, .ant-checkbox:hover .ant-checkbox-inner, .ant-checkbox-input:focus + .ant-checkbox-inner
+{
+  border-color: #737373;
+}
+
+.bis-gray-button {
+  @extend .bis-button;
+  background-color: #737373;
+  background: #737373;
+  border-color: #737373;
+}
+
+.bis-gray-button:hover,
+.bis-gray-button:focus
+{
+  background-color: #737373;
+  background: #737373;
+  border-color: #737373;
+}
+
+.bis-button-group button {
+  margin-right: 5px;
+}
+
+.ant-tabs-nav .ant-tabs-tab-btn {
+  font-size: 12px;
+}
+
+.ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn,
+.ant-tabs-tab:hover,
+.bis-anchor {
+  color: #ca2420;
+}
+
+.ant-tabs-ink-bar {
+  background-color: #ca2420;
+  background: #ca2420;
+}
+
+.ag-row,
+.ag-header {
+  font-size: 11px !important;
+}
+
+.pull-right {
+  float: right;
+}
+
+.pull-left
+{
+  float:left;
+}
+
+.bis-popover-save-button
+{
+  margin-top:10px;
+}
+
+.ant-checkbox-checked .ant-checkbox-inner {
+  background-color: #737373;
+  background: #737373;
+  border-color: #f6f6f6;
+  color: black;
+}
