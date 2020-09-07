@@ -132,7 +132,7 @@ export default class Grid extends Component {
                 <div
                     className="ag-theme-alpine"
                     style={{
-                    height: "420px",
+                    height: this.props.height,
                     width: "100%"
                 }}>
                     <AgGridReact
@@ -167,7 +167,8 @@ Grid.protoTypes = {
     showToolBar: PropTypes.bool,
     onGridReady: PropTypes.func,
     gridApi: PropTypes.object,
-    gridColumnApi: PropTypes.object
+    gridColumnApi: PropTypes.object,
+    height: PropTypes.string,
 }
 
 Grid.defaultProps = {
@@ -176,6 +177,7 @@ Grid.defaultProps = {
     gridApi: {},
     gridColumnApi: {},
     showToolBar: false,
+    height: '420px',
     defaultColDef: {
         minWidth: 100,
         enableValue: true,
