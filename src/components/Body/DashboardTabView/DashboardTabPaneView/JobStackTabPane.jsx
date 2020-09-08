@@ -347,10 +347,10 @@ export default class JobStackTabPane extends Component {
           <Col span={3}>
             <Input placeholder="Researcher" />
           </Col>
-          <Col span={3}>
+          <Col>
             <DatePicker onChange={this.onChange} placeholder="From Date" />
           </Col>
-          <Col span={3}>
+          <Col>
             <DatePicker onChange={this.onChange} placeholder="To Date" />
           </Col>
           <Col>

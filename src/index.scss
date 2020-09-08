@@ -10,7 +10,6 @@ body {
   font-weight: normal;
   font-family: Ariel;
   text-decoration: none;
-  height: 25px;
 }
 
 .bis-red-button {
@@ -92,4 +91,9 @@ body {
   background: #737373;
   border-color: #f6f6f6;
   color: black;
+}
+
+.ant-select
+{
+  width:100%;
 }

@@ -1,5 +1,21 @@
-.bis-admin-setting-tab-view
-{
-    margin-top: -24px;
-    margin-bottom: -24px;
+.bis-admin-setting-tab-view {
+  margin-top: -24px;
+  margin-bottom: -24px;
+
+  .bis-grid-icon {
+    font-size: 20px;
+    margin-top: 0px;
+    line-height: 20px;
+    vertical-align: middle;
+    cursor:pointer;
+
+    .anticon{
+        margin-right:10px;
+    }
+  }
+
+  .bis-grid
+  {
+      margin-bottom: 5px;
+  }
 }

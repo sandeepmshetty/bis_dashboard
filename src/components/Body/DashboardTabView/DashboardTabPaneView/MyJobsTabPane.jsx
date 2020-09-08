@@ -176,8 +176,8 @@ export default class MyJobsTabPane extends Component {
 			<Col span={3}><Input placeholder="Job No"/></Col>
 			<Col span={3}><Input placeholder="Client"/></Col>
 			<Col span={3}><Input placeholder="Researcher"/></Col>
-			<Col span={3}><DatePicker onChange={this.onChange} placeholder="From Date"/></Col>
-			<Col span={3}><DatePicker onChange={this.onChange} placeholder="To Date"/></Col>
+			<Col><DatePicker onChange={this.onChange} placeholder="From Date"/></Col>
+			<Col><DatePicker onChange={this.onChange} placeholder="To Date"/></Col>
 			<Col><Button
 				type="primary"
 				className="bis-gray-button"
