@@ -48,7 +48,7 @@ export default class ChangeAttendanceTabPane extends Component {
               type="primary"
               className="bis-gray-button"
               title="Search"
-              icon={<SaveOutlined  />}
+              icon={<SearchOutlined  />}
             />
           </Col>
           <Col>
