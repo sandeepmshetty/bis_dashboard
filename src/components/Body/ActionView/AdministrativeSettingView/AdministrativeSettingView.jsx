@@ -2,7 +2,8 @@ import React, { Component } from "react";
 import { Tabs } from "antd";
 import ChangeJobDetailsTabPane from "./AdministrativeTabPaneView/ChangeJobDetailsTabPane.jsx";
 import ChangeAttendanceTabPane from "./AdministrativeTabPaneView/ChangeAttendanceTabPane.jsx";
-import UserManagementTabPane from "./AdministrativeTabPaneView/UserManagementTabPane.jsx"
+import UserManagementTabPane from "./AdministrativeTabPaneView/UserManagementTabPane.jsx";
+import AnnouncementTabPane from "./AdministrativeTabPaneView/AnnouncementTabPane.jsx";
 
 import "./AdministrativeSettingView.scss";
 
@@ -26,7 +27,9 @@ export default class AdministrativeSettingView extends Component {
           <TabPane tab="User Management" key="3">
             <UserManagementTabPane/>
           </TabPane>
-          <TabPane tab="Announcement" key="4"></TabPane>
+          <TabPane tab="Announcement" key="4">
+            <AnnouncementTabPane />
+          </TabPane>
         </Tabs>
       </div>
     );
