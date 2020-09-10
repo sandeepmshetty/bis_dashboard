@@ -8,8 +8,11 @@
 
   .bis-transparent-button {
     background: transparent;
-    border-color: transparent;
+    border-color: #babfc7;
     color: black;
+    text-shadow: 0px 0px black;
+    box-shadow: 0px 0px black;
+    border-width: 0px 0px 1px 0px;
   }
 
 }

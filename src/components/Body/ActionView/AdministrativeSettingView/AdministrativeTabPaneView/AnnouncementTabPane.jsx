@@ -14,10 +14,6 @@ export default class AnnouncementTabPane extends Component {
         this.setState({value});
     }
 
-    handleChange(value) {
-        console.log(`selected ${value}`);
-    }
-
     render() {
         const {Option} = Select;
 

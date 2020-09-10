@@ -8,10 +8,6 @@ import AnnouncementTabPane from "./AdministrativeTabPaneView/AnnouncementTabPane
 import "./AdministrativeSettingView.scss";
 
 export default class AdministrativeSettingView extends Component {
-  callback(key) {
-    console.log(key);
-  }
-
   render() {
     const { TabPane } = Tabs;
 

@@ -71,6 +71,7 @@ export default class Grid extends Component {
         this
             .grid_Api
             .setColumnDefs(this.props.columnDefs);
+        this.grid_Api.sizeColumnsToFit();  
         this.setState({columnDefs: this.props.columnDefs});
     }
 
@@ -90,6 +91,10 @@ export default class Grid extends Component {
         this
             .grid_ColumnApi
             .autoSizeColumns(allColumnIds, true);
+        
+        this.grid_Api.sizeColumnsToFit();   
+
+        this.grid_Api.setHeaderHeight(31);
 
         props.onGridReady(params);
 
