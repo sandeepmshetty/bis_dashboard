@@ -28,7 +28,7 @@ export default class TimeClockView extends Component {
           <Col span={2} className="bis-col">
             <span>Name</span>
           </Col>
-          <Col span={4} className="bis-col">
+          <Col span={6} className="bis-col">
             <Select onChange={this.handleChange.bind(this)}>
               <Option value="sanjaybarman">Sanjay Barman</Option>
               <Option value="sandeepshetty">Sandeep Shetty</Option>
@@ -46,7 +46,7 @@ export default class TimeClockView extends Component {
           <Col span={2} className="bis-col">
             <span>Function</span>
           </Col>
-          <Col span={4} className="bis-col">
+          <Col span={6} className="bis-col">
             <Select
               placeholder="Operator"
               onChange={this.handleChange.bind(this)}
