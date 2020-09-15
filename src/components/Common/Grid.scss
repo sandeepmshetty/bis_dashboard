@@ -1,4 +1,10 @@
 .bis-grid {
+  .ant-col-23
+  {
+    flex: 0 0 calc(100% - 33px);
+    max-width: calc(100% - 33px);
+  }
+
   .bis-toolbar {
     background-color: #f8f8f8;
     border: #babfc7 solid 1px;

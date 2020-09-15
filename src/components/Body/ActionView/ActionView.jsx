@@ -44,7 +44,7 @@ export default class ActionView extends Component {
   }
 
   onClick() {
-    window.open("http://localhost:3000/JobInProgressTabPane", "_blank");
+    window.open("http://localhost:3000/CreateJobView", "_blank");
   }
 
   render() {

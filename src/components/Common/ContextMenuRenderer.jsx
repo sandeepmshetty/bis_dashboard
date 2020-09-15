@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import PropTypes from "prop-types";
 import {List, Popover, Divider} from "antd";
 import {DownOutlined} from "@ant-design/icons";
+import "./ContextMenuRendered.scss";
 
 export default class ContextMenuRenderer extends Component {
   constructor(props) {
@@ -12,12 +13,12 @@ export default class ContextMenuRenderer extends Component {
       .bind(this);
   }
 
-  invokeParentMethod() {
+  invokeParentMethod(e) {
     this
       .props
       .context
       .componentParent
-      .methodFromParent(`Row: ${this.props.node.rowIndex}`);
+      .methodFromParent(`Row: ${this.props.node.rowIndex}`, e);
   }
 
   getMenuList() {
@@ -33,7 +34,7 @@ export default class ContextMenuRenderer extends Component {
     return (
       <div>
         {menuList.map((menu) => (
-          <li key={menu} className="bis-popover-list">
+          <li key={menu} className="bis-popover-list"  onClick={(e) => this.invokeParentMethod(e)}>
             {menu}
           </li>
         ))}
@@ -50,7 +51,7 @@ export default class ContextMenuRenderer extends Component {
           title={"Select action"}
           content={menuList}
           trigger="click">
-          <DownOutlined onClick={this.invokeParentMethod}/>
+          <DownOutlined/>
         </Popover>
       </span>
     );

@@ -18,6 +18,7 @@ export default class Grid extends Component {
     let hideShowColumn = [];
 
     this.props.columnDefs.forEach((column) => {
+      if(!column.pinned)
       hideShowColumn.push({ headerName: column.headerName });
     });
 

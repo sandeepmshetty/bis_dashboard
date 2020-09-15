@@ -16,6 +16,7 @@ export default class JobStackTabPane extends Component {
           cellRenderer: 'contextMenuRenderer',
           editable: false,
           sortable: false,
+          filter: false,
         },
         {
           headerName: "Req",
@@ -202,8 +203,8 @@ export default class JobStackTabPane extends Component {
 	this.gridColumnApi = params.columnApi;
   }
 
-  methodFromParent(cell){
-    console.log('Parent Component Method from ' + cell + '!');
+  methodFromParent(cell, e){
+    console.log(cell + '!' + e.currentTarget.textContent);
   };
 
   render() {
