@@ -48,7 +48,8 @@ body {
   border-color: #737373;
 }
 
-.bis-button-group button {
+.bis-button-group button,
+.bis-button-group .ant-picker {
   margin-right: 5px;
 }
 
@@ -181,8 +182,8 @@ body {
 
 .bis-popover-list {
   border-bottom: 1px solid #f0f0f0;
-  padding-bottom: 5px;
-  padding-top: 5px;
+  padding: 5px;
+  cursor: pointer;
 }
 
 .ant-popover-placement-bottomLeft {
@@ -200,5 +201,19 @@ body {
 }
 
 .ant-popover-inner-content {
-  padding: 0px 16px;
+  padding: 10px 16px;
+}
+
+.ant-modal-body {
+  padding: 10px 24px;
+  font-size: 12px;
+}
+
+.ant-form-item
+{
+  margin-bottom: 5px;
+}
+
+.bis-popover-list:hover{
+  background: #e4e4e4;
 }
