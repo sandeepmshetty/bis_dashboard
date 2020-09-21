@@ -1,67 +1,128 @@
-import React, { Component, useState  } from "react";
-import { Row, Col, Select, Button, Dropdown, IconButton } from "antd";
+import React, {Component, useState} from "react";
+import {
+  Row,
+  Col,
+  Select,
+  Button,
+  Dropdown,
+  IconButton
+} from "antd";
 import RichTextEditor from "react-rte";
 import ReactQuill from 'react-quill';
 import 'react-quill/dist/quill.snow.css';
 
 const Quill = ReactQuill.Quill
-var Font = Quill.import('formats/font');
+var Font = Quill.import ('formats/font');
 Font.whitelist = ['Ubuntu', 'Raleway', 'Roboto'];
-Quill.register(Font, true); 
+Quill.register(Font, true);
 
 export default class AnnouncementTabPane extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      value: RichTextEditor.createEmptyValue(),
+      value: RichTextEditor.createEmptyValue()
     };
   }
 
   onChange(value) {
-    this.setState({ value });
+    this.setState({value});
   }
 
   render() {
-    const { Option } = Select;
+    const {Option} = Select;
 
     const modules = {
-        toolbar: [
-            // [{ 'size': ['small', false, 'large', 'huge'] }],  // custom dropdown
-            [{ 'header': [1, 2, 3, 4, 5, 6, false] }],
-            [{ 'font': [] }],
-            [{ 'align': [] }],
-            ['bold', 'italic', 'underline', 'strike'],        // toggled buttons
-            ['blockquote', 'code-block'],
-          
-            [{ 'list': 'ordered'}, { 'list': 'bullet' }],
-            // [{ 'script': 'sub'}, { 'script': 'super' }],      // superscript/subscript
-            [{ 'indent': '-1'}, { 'indent': '+1' }],          // outdent/indent
-            [{ 'direction': 'rtl' }],                         // text direction
-        
-            [{ 'color': [] }, { 'background': [] }],          // dropdown with defaults from theme
-          
-            ['clean']                                         // remove formatting button
-        ]
-      };
-      
-      const formats = [
-        'header', 'font', 'size',
-        'bold', 'italic', 'underline', 'strike', 'blockquote',
-        'list', 'bullet', 'indent',
-        'link', 'image', 'video'
+      toolbar: [
+        // [{ 'size': ['small', false, 'large', 'huge'] }],  // custom dropdown
+        [
+          {
+            'header': [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              false
+            ]
+          }
+        ],
+        [
+          {
+            'font': []
+          }
+        ],
+        [
+          {
+            'align': []
+          }
+        ],
+        [
+          'bold', 'italic', 'underline', 'strike'
+        ], // toggled buttons
+        [
+          'blockquote', 'code-block'
+        ],
+
+        [
+          {
+            'list': 'ordered'
+          }, {
+            'list': 'bullet'
+          }
+        ],
+        // [{ 'script': 'sub'}, { 'script': 'super' }],      // superscript/subscript
+        [
+          {
+            'indent': '-1'
+          }, {
+            'indent': '+1'
+          }
+        ], // outdent/indent
+        [
+          {
+            'direction': 'rtl'
+          }
+        ], // text direction
+
+        [
+          {
+            'color': []
+          }, {
+            'background': []
+          }
+        ], // dropdown with defaults from theme
+
+        ['clean'] // remove formatting button
       ]
+    };
+
+    const formats = [
+      'header',
+      'font',
+      'size',
+      'bold',
+      'italic',
+      'underline',
+      'strike',
+      'blockquote',
+      'list',
+      'bullet',
+      'indent',
+      'link',
+      'image',
+      'video'
+    ]
 
     return (
       <div>
         <Row className="bis-dashboard-search-row">
           <Col span={12}>
-            <h3>Announcement Status: On</h3>
+            <div className="bis-block-header">Announcement Status: On</div>
           </Col>
         </Row>
 
-        <ReactQuill theme="snow" modules={modules}/>
-
-        {/* <RichTextEditor
+        <ReactQuill theme="snow" modules={modules}/> {/* <RichTextEditor
           value={this.state.value}
           onChange={this.onChange.bind(this)}
           customControls={[

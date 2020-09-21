@@ -70,7 +70,7 @@ export default class ActionView extends Component {
             type="primary"
             className="bis-gray-button"
             title="Search"
-            icon={<SearchOutlined />}
+            icon={<ReloadOutlined />}
           />
           <Button
             type="primary"

@@ -22,7 +22,7 @@ export default class ChangeAttendanceTabPane extends Component {
       <div>
         <Row className="bis-dashboard-search-row">
           <Col span={4}>
-            <h3> Search Criteria </h3>
+            <div className="bis-block-header"> Search Criteria </div>
           </Col>
         </Row>
 
@@ -65,7 +65,7 @@ export default class ChangeAttendanceTabPane extends Component {
 
         <Row>
           <Col span={4}>
-            <h3> Attendance History </h3>
+            <div className="bis-block-header">  Attendance History </div>
           </Col>
         </Row>
       </div>
