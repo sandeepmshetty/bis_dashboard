@@ -186,7 +186,7 @@ Grid.defaultProps = {
   frameworkComponents: {},
   context:{},
   showToolBar: false,
-  height: "420px",
+  height: "400px",
   defaultColDef: {
     minWidth: 100,
     enableValue: true,

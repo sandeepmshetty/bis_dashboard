@@ -1,0 +1,14 @@
+$heartful-red: #ca2420;
+$intelligent-gray: #737373;
+
+.bis-footer {
+  height: 52px;
+  background-color: $intelligent-gray;
+  line-height: 52px;
+  color: white;
+
+  .ant-row
+  {
+    padding: 0px 5px;
+  }
+}

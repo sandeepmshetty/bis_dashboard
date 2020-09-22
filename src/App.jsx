@@ -7,6 +7,7 @@ import 'ag-grid-community/dist/styles/ag-theme-alpine.css';
 import {connect} from 'react-redux';
 import {BrowserRouter as Router} from 'react-router-dom';
 import Header from './components/Header/Header.jsx';
+import Footer from './components/Footer/Footer.jsx';
 import {increaseCounter, decreaseCounter} from './redux/Counter/counter.actions';
 import Routes from '../src/routes/routes';
 
@@ -16,6 +17,7 @@ function App(props) {
 			<div className='App'>
 				<Header/>
 				<Routes/>
+				<Footer/>
 			</div>
 		</Router>
 	);

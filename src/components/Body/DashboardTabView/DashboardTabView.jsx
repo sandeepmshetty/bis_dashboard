@@ -12,7 +12,7 @@ import './DashboardTabView.scss';
 export default class DashboardTabView extends Component {
 
 	callback(key) {
-		console.log(key);
+		
 	}
 
 	render()

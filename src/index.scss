@@ -90,9 +90,8 @@ body {
 }
 
 .ant-tabs-content-holder {
-  margin-top: -16px;
   border-top: 1px solid white;
-  padding-top: 8px;
+  padding-top: 5px;
 }
 
 .ag-row,
@@ -221,4 +220,12 @@ body {
 .bis-block-header
 {
   font-weight: 600
+}
+
+.ant-tabs-top > .ant-tabs-nav, 
+.ant-tabs-bottom > .ant-tabs-nav, 
+.ant-tabs-top > div > .ant-tabs-nav, 
+.ant-tabs-bottom > div > .ant-tabs-nav
+{
+  margin: 0px;
 }

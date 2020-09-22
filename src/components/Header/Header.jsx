@@ -5,9 +5,9 @@ export default class Header extends Component {
 	render()
 	{
 		return (
-			<div className="bis-header">
+			<header className="bis-header">
                 
-			</div>
+			</header>
 		);
 	}
 };
