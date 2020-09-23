@@ -5,6 +5,7 @@ import JobInProgressTabPane from './DashboardTabPaneView/JobInProgressTabPane.js
 import MyJobsTabPane from './DashboardTabPaneView/MyJobsTabPane.jsx';
 import ArchiveTabPane from './DashboardTabPaneView/ArchiveTabPane.jsx';
 import TeamCapacityTabPane from './DashboardTabPaneView/TeamCapacityTabPane.jsx';
+import MyRequestTabPane from './DashboardTabPaneView/MyRequestTabPane.jsx';
 
 
 import './DashboardTabView.scss';
@@ -36,6 +37,9 @@ export default class DashboardTabView extends Component {
 					</TabPane>
 					<TabPane tab="Team Capacity" key="5">
 						<TeamCapacityTabPane/>
+					</TabPane>
+					<TabPane tab="My Request" key="6">
+						<MyRequestTabPane />
 					</TabPane>
 				</Tabs>
 			</div>
